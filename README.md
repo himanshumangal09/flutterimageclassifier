@@ -20,10 +20,6 @@ Once the data acquisition and preprocessing stage was carried out, several trans
 Once we have trained the  model, our next step will be toobtain a Torch Script capable of being loaded and used to makeinferences, either in a desktop Python environment or in a mobile environment with Dart and Flutter frameworks as is being done in the present project.
 
 ## Results
-The results file can be seen at: 
-
-[2. evaluation_metrics.ipynb](https://github.com/ChristianConchari/COVID-19-detection-with-Chest-X-Ray-using-PyTorch/blob/master/2.%20evaluation_metrics.ipynb)
-
 In order to evaluate the project some  metrics  must  be obtained, these will be the most important feedback to the project and may be applied to the training or data augmentation part. In order to obtain the required metrics a data extraction must be made, the model on __.pt__ and __.pth__ format will be loaded and the important characteristics will be extracted from it. The relevant metrics for a ResNet-18 neural network are:
 <table>
 <tr>
@@ -93,11 +89,6 @@ In order to evaluate the project some  metrics  must  be obtained, these will be
 - __Flutter App Implementation__
 
 A mobile interface has been created using the Flutter framework, for this purpose we made use of the pytorch mobile library, which allows us to work loading the Pytorch script  generated with the information of the trained model, to make inferences taking as input images entered by the user and giving as output the corresponding classification label.
-<p align="center">
-  <img  src="https://github.com/ChristianConchari/COVID-19-detection-with-Chest-X-Ray-using-PyTorch/blob/master/Result_images/app_results.png">
-</p>
-This figure shows a gradient prediction of the model
-
 
 ## Conclussions
 In this project we have presented an implementation of a Convolutional Neural Network (CNN) model generated with Transfer Learning techniques, modifying the pre-trained ResNet18  network to classify chest X-ray images into four classes: normal lungs,  lungs infected with COVID-19, with viral pneumonia and pulmonary opacity. The current scenery in which  we find ourselves requires us to contribute through new solutions, in our case applying artificial intelligence to support the medical diagnosis of respiratory diseases such as COVID-19.
